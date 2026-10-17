@@ -1,0 +1,15 @@
+ARG policy FIFO
+ARG jlist 50,100,200
+
+Here is the job list, with the run time of each job: 
+  Job 0 ( length = 50.0 )
+  Job 1 ( length = 100.0 )
+  Job 2 ( length = 200.0 )
+
+
+Compute the turnaround time, response time, and wait time for each job.
+When you are done, run this program again, with the same arguments,
+but with -c, which will thus provide you with the answers. You can use
+-s <somenumber> or your own job list (-l 10,15,20 for example)
+to generate different problems for yourself.
+

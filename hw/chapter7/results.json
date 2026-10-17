@@ -1,0 +1,1094 @@
+{
+  "scheduler_sha256": "a0f9c0e639b427dc23e1c1c7528c0db1e43858fff456228a68885766d9de3ac7",
+  "scheduler_revision": "afb36ca8ddbf81d847d18f6bd18a87f0a18667f2",
+  "python_version": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "generated_utc": "2026-10-17T15:56:01.372031+00:00",
+  "experiment_count": 30,
+  "all_averages_verified": true,
+  "experiments": [
+    {
+      "id": "q1_fifo",
+      "jobs": [
+        200,
+        200,
+        200
+      ],
+      "policy": "FIFO",
+      "quantum": 1,
+      "response": [
+        0,
+        200,
+        400
+      ],
+      "turnaround": [
+        200,
+        400,
+        600
+      ],
+      "wait": [
+        0,
+        200,
+        400
+      ],
+      "average": [
+        200.0,
+        400.0,
+        200.0
+      ],
+      "simulator_average": [
+        200.0,
+        400.0,
+        200.0
+      ],
+      "command": "python3 ./ext/ostep-homework/cpu-sched/scheduler.py -l 200,200,200 -p FIFO -s 1234 -c"
+    },
+    {
+      "id": "q2_fifo",
+      "jobs": [
+        100,
+        200,
+        300
+      ],
+      "policy": "FIFO",
+      "quantum": 1,
+      "response": [
+        0,
+        100,
+        300
+      ],
+      "turnaround": [
+        100,
+        300,
+        600
+      ],
+      "wait": [
+        0,
+        100,
+        300
+      ],
+      "average": [
+        133.33333333333334,
+        333.3333333333333,
+        133.33333333333334
+      ],
+      "simulator_average": [
+        133.33,
+        333.33,
+        133.33
+      ],
+      "command": "python3 ./ext/ostep-homework/cpu-sched/scheduler.py -l 100,200,300 -p FIFO -s 1234 -c"
+    },
+    {
+      "id": "q1_sjf",
+      "jobs": [
+        200,
+        200,
+        200
+      ],
+      "policy": "SJF",
+      "quantum": 1,
+      "response": [
+        0,
+        200,
+        400
+      ],
+      "turnaround": [
+        200,
+        400,
+        600
+      ],
+      "wait": [
+        0,
+        200,
+        400
+      ],
+      "average": [
+        200.0,
+        400.0,
+        200.0
+      ],
+      "simulator_average": [
+        200.0,
+        400.0,
+        200.0
+      ],
+      "command": "python3 ./ext/ostep-homework/cpu-sched/scheduler.py -l 200,200,200 -p SJF -s 1234 -c"
+    },
+    {
+      "id": "q2_sjf",
+      "jobs": [
+        100,
+        200,
+        300
+      ],
+      "policy": "SJF",
+      "quantum": 1,
+      "response": [
+        0,
+        100,
+        300
+      ],
+      "turnaround": [
+        100,
+        300,
+        600
+      ],
+      "wait": [
+        0,
+        100,
+        300
+      ],
+      "average": [
+        133.33333333333334,
+        333.3333333333333,
+        133.33333333333334
+      ],
+      "simulator_average": [
+        133.33,
+        333.33,
+        133.33
+      ],
+      "command": "python3 ./ext/ostep-homework/cpu-sched/scheduler.py -l 100,200,300 -p SJF -s 1234 -c"
+    },
+    {
+      "id": "q3_rr_equal",
+      "jobs": [
+        200,
+        200,
+        200
+      ],
+      "policy": "RR",
+      "quantum": 1,
+      "response": [
+        0,
+        1,
+        2
+      ],
+      "turnaround": [
+        598,
+        599,
+        600
+      ],
+      "wait": [
+        398,
+        399,
+        400
+      ],
+      "average": [
+        1.0,
+        599.0,
+        399.0
+      ],
+      "simulator_average": [
+        1.0,
+        599.0,
+        399.0
+      ],
+      "command": "python3 ./ext/ostep-homework/cpu-sched/scheduler.py -l 200,200,200 -p RR -s 1234 -q 1 -c"
+    },
+    {
+      "id": "q3_rr_different",
+      "jobs": [
+        100,
+        200,
+        300
+      ],
+      "policy": "RR",
+      "quantum": 1,
+      "response": [
+        0,
+        1,
+        2
+      ],
+      "turnaround": [
+        298,
+        499,
+        600
+      ],
+      "wait": [
+        198,
+        299,
+        300
+      ],
+      "average": [
+        1.0,
+        465.6666666666667,
+        265.6666666666667
+      ],
+      "simulator_average": [
+        1.0,
+        465.67,
+        265.67
+      ],
+      "command": "python3 ./ext/ostep-homework/cpu-sched/scheduler.py -l 100,200,300 -p RR -s 1234 -q 1 -c"
+    },
+    {
+      "id": "q4_sorted_fifo",
+      "jobs": [
+        50,
+        100,
+        200
+      ],
+      "policy": "FIFO",
+      "quantum": 1,
+      "response": [
+        0,
+        50,
+        150
+      ],
+      "turnaround": [
+        50,
+        150,
+        350
+      ],
+      "wait": [
+        0,
+        50,
+        150
+      ],
+      "average": [
+        66.66666666666667,
+        183.33333333333334,
+        66.66666666666667
+      ],
+      "simulator_average": [
+        66.67,
+        183.33,
+        66.67
+      ],
+      "command": "python3 ./ext/ostep-homework/cpu-sched/scheduler.py -l 50,100,200 -p FIFO -s 1234 -c"
+    },
+    {
+      "id": "q4_sorted_sjf",
+      "jobs": [
+        50,
+        100,
+        200
+      ],
+      "policy": "SJF",
+      "quantum": 1,
+      "response": [
+        0,
+        50,
+        150
+      ],
+      "turnaround": [
+        50,
+        150,
+        350
+      ],
+      "wait": [
+        0,
+        50,
+        150
+      ],
+      "average": [
+        66.66666666666667,
+        183.33333333333334,
+        66.66666666666667
+      ],
+      "simulator_average": [
+        66.67,
+        183.33,
+        66.67
+      ],
+      "command": "python3 ./ext/ostep-homework/cpu-sched/scheduler.py -l 50,100,200 -p SJF -s 1234 -c"
+    },
+    {
+      "id": "q4_unsorted_fifo",
+      "jobs": [
+        300,
+        100,
+        200
+      ],
+      "policy": "FIFO",
+      "quantum": 1,
+      "response": [
+        0,
+        300,
+        400
+      ],
+      "turnaround": [
+        300,
+        400,
+        600
+      ],
+      "wait": [
+        0,
+        300,
+        400
+      ],
+      "average": [
+        233.33333333333334,
+        433.3333333333333,
+        233.33333333333334
+      ],
+      "simulator_average": [
+        233.33,
+        433.33,
+        233.33
+      ],
+      "command": "python3 ./ext/ostep-homework/cpu-sched/scheduler.py -l 300,100,200 -p FIFO -s 1234 -c"
+    },
+    {
+      "id": "q4_unsorted_sjf",
+      "jobs": [
+        300,
+        100,
+        200
+      ],
+      "policy": "SJF",
+      "quantum": 1,
+      "response": [
+        300,
+        0,
+        100
+      ],
+      "turnaround": [
+        600,
+        100,
+        300
+      ],
+      "wait": [
+        300,
+        0,
+        100
+      ],
+      "average": [
+        133.33333333333334,
+        333.3333333333333,
+        133.33333333333334
+      ],
+      "simulator_average": [
+        133.33,
+        333.33,
+        133.33
+      ],
+      "command": "python3 ./ext/ostep-homework/cpu-sched/scheduler.py -l 300,100,200 -p SJF -s 1234 -c"
+    },
+    {
+      "id": "q5_sorted_sjf",
+      "jobs": [
+        100,
+        200,
+        300
+      ],
+      "policy": "SJF",
+      "quantum": 300,
+      "response": [
+        0,
+        100,
+        300
+      ],
+      "turnaround": [
+        100,
+        300,
+        600
+      ],
+      "wait": [
+        0,
+        100,
+        300
+      ],
+      "average": [
+        133.33333333333334,
+        333.3333333333333,
+        133.33333333333334
+      ],
+      "simulator_average": [
+        133.33,
+        333.33,
+        133.33
+      ],
+      "command": "python3 ./ext/ostep-homework/cpu-sched/scheduler.py -l 100,200,300 -p SJF -s 1234 -c"
+    },
+    {
+      "id": "q5_sorted_rr",
+      "jobs": [
+        100,
+        200,
+        300
+      ],
+      "policy": "RR",
+      "quantum": 300,
+      "response": [
+        0,
+        100,
+        300
+      ],
+      "turnaround": [
+        100,
+        300,
+        600
+      ],
+      "wait": [
+        0,
+        100,
+        300
+      ],
+      "average": [
+        133.33333333333334,
+        333.3333333333333,
+        133.33333333333334
+      ],
+      "simulator_average": [
+        133.33,
+        333.33,
+        133.33
+      ],
+      "command": "python3 ./ext/ostep-homework/cpu-sched/scheduler.py -l 100,200,300 -p RR -s 1234 -q 300 -c"
+    },
+    {
+      "id": "q5_sorted_rr_q200",
+      "jobs": [
+        100,
+        200,
+        300
+      ],
+      "policy": "RR",
+      "quantum": 200,
+      "response": [
+        0,
+        100,
+        300
+      ],
+      "turnaround": [
+        100,
+        300,
+        600
+      ],
+      "wait": [
+        0,
+        100,
+        300
+      ],
+      "average": [
+        133.33333333333334,
+        333.3333333333333,
+        133.33333333333334
+      ],
+      "simulator_average": [
+        133.33,
+        333.33,
+        133.33
+      ],
+      "command": "python3 ./ext/ostep-homework/cpu-sched/scheduler.py -l 100,200,300 -p RR -s 1234 -q 200 -c"
+    },
+    {
+      "id": "q5_unsorted_sjf",
+      "jobs": [
+        300,
+        100,
+        200
+      ],
+      "policy": "SJF",
+      "quantum": 300,
+      "response": [
+        300,
+        0,
+        100
+      ],
+      "turnaround": [
+        600,
+        100,
+        300
+      ],
+      "wait": [
+        300,
+        0,
+        100
+      ],
+      "average": [
+        133.33333333333334,
+        333.3333333333333,
+        133.33333333333334
+      ],
+      "simulator_average": [
+        133.33,
+        333.33,
+        133.33
+      ],
+      "command": "python3 ./ext/ostep-homework/cpu-sched/scheduler.py -l 300,100,200 -p SJF -s 1234 -c"
+    },
+    {
+      "id": "q5_unsorted_rr",
+      "jobs": [
+        300,
+        100,
+        200
+      ],
+      "policy": "RR",
+      "quantum": 300,
+      "response": [
+        0,
+        300,
+        400
+      ],
+      "turnaround": [
+        300,
+        400,
+        600
+      ],
+      "wait": [
+        0,
+        300,
+        400
+      ],
+      "average": [
+        233.33333333333334,
+        433.3333333333333,
+        233.33333333333334
+      ],
+      "simulator_average": [
+        233.33,
+        433.33,
+        233.33
+      ],
+      "command": "python3 ./ext/ostep-homework/cpu-sched/scheduler.py -l 300,100,200 -p RR -s 1234 -q 300 -c"
+    },
+    {
+      "id": "q6_length_10",
+      "jobs": [
+        10,
+        10,
+        10
+      ],
+      "policy": "SJF",
+      "quantum": 1,
+      "response": [
+        0,
+        10,
+        20
+      ],
+      "turnaround": [
+        10,
+        20,
+        30
+      ],
+      "wait": [
+        0,
+        10,
+        20
+      ],
+      "average": [
+        10.0,
+        20.0,
+        10.0
+      ],
+      "simulator_average": [
+        10.0,
+        20.0,
+        10.0
+      ],
+      "command": "python3 ./ext/ostep-homework/cpu-sched/scheduler.py -l 10,10,10 -p SJF -s 1234 -c"
+    },
+    {
+      "id": "q6_length_100",
+      "jobs": [
+        100,
+        100,
+        100
+      ],
+      "policy": "SJF",
+      "quantum": 1,
+      "response": [
+        0,
+        100,
+        200
+      ],
+      "turnaround": [
+        100,
+        200,
+        300
+      ],
+      "wait": [
+        0,
+        100,
+        200
+      ],
+      "average": [
+        100.0,
+        200.0,
+        100.0
+      ],
+      "simulator_average": [
+        100.0,
+        200.0,
+        100.0
+      ],
+      "command": "python3 ./ext/ostep-homework/cpu-sched/scheduler.py -l 100,100,100 -p SJF -s 1234 -c"
+    },
+    {
+      "id": "q6_length_1000",
+      "jobs": [
+        1000,
+        1000,
+        1000
+      ],
+      "policy": "SJF",
+      "quantum": 1,
+      "response": [
+        0,
+        1000,
+        2000
+      ],
+      "turnaround": [
+        1000,
+        2000,
+        3000
+      ],
+      "wait": [
+        0,
+        1000,
+        2000
+      ],
+      "average": [
+        1000.0,
+        2000.0,
+        1000.0
+      ],
+      "simulator_average": [
+        1000.0,
+        2000.0,
+        1000.0
+      ],
+      "command": "python3 ./ext/ostep-homework/cpu-sched/scheduler.py -l 1000,1000,1000 -p SJF -s 1234 -c"
+    },
+    {
+      "id": "q7_q_1",
+      "jobs": [
+        100,
+        200,
+        300
+      ],
+      "policy": "RR",
+      "quantum": 1,
+      "response": [
+        0,
+        1,
+        2
+      ],
+      "turnaround": [
+        298,
+        499,
+        600
+      ],
+      "wait": [
+        198,
+        299,
+        300
+      ],
+      "average": [
+        1.0,
+        465.6666666666667,
+        265.6666666666667
+      ],
+      "simulator_average": [
+        1.0,
+        465.67,
+        265.67
+      ],
+      "command": "python3 ./ext/ostep-homework/cpu-sched/scheduler.py -l 100,200,300 -p RR -s 1234 -q 1 -c"
+    },
+    {
+      "id": "q7_q_2",
+      "jobs": [
+        100,
+        200,
+        300
+      ],
+      "policy": "RR",
+      "quantum": 2,
+      "response": [
+        0,
+        2,
+        4
+      ],
+      "turnaround": [
+        296,
+        498,
+        600
+      ],
+      "wait": [
+        196,
+        298,
+        300
+      ],
+      "average": [
+        2.0,
+        464.6666666666667,
+        264.6666666666667
+      ],
+      "simulator_average": [
+        2.0,
+        464.67,
+        264.67
+      ],
+      "command": "python3 ./ext/ostep-homework/cpu-sched/scheduler.py -l 100,200,300 -p RR -s 1234 -q 2 -c"
+    },
+    {
+      "id": "q7_q_5",
+      "jobs": [
+        100,
+        200,
+        300
+      ],
+      "policy": "RR",
+      "quantum": 5,
+      "response": [
+        0,
+        5,
+        10
+      ],
+      "turnaround": [
+        290,
+        495,
+        600
+      ],
+      "wait": [
+        190,
+        295,
+        300
+      ],
+      "average": [
+        5.0,
+        461.6666666666667,
+        261.6666666666667
+      ],
+      "simulator_average": [
+        5.0,
+        461.67,
+        261.67
+      ],
+      "command": "python3 ./ext/ostep-homework/cpu-sched/scheduler.py -l 100,200,300 -p RR -s 1234 -q 5 -c"
+    },
+    {
+      "id": "q7_q_10",
+      "jobs": [
+        100,
+        200,
+        300
+      ],
+      "policy": "RR",
+      "quantum": 10,
+      "response": [
+        0,
+        10,
+        20
+      ],
+      "turnaround": [
+        280,
+        490,
+        600
+      ],
+      "wait": [
+        180,
+        290,
+        300
+      ],
+      "average": [
+        10.0,
+        456.6666666666667,
+        256.6666666666667
+      ],
+      "simulator_average": [
+        10.0,
+        456.67,
+        256.67
+      ],
+      "command": "python3 ./ext/ostep-homework/cpu-sched/scheduler.py -l 100,200,300 -p RR -s 1234 -q 10 -c"
+    },
+    {
+      "id": "q7_q_50",
+      "jobs": [
+        100,
+        200,
+        300
+      ],
+      "policy": "RR",
+      "quantum": 50,
+      "response": [
+        0,
+        50,
+        100
+      ],
+      "turnaround": [
+        200,
+        450,
+        600
+      ],
+      "wait": [
+        100,
+        250,
+        300
+      ],
+      "average": [
+        50.0,
+        416.6666666666667,
+        216.66666666666666
+      ],
+      "simulator_average": [
+        50.0,
+        416.67,
+        216.67
+      ],
+      "command": "python3 ./ext/ostep-homework/cpu-sched/scheduler.py -l 100,200,300 -p RR -s 1234 -q 50 -c"
+    },
+    {
+      "id": "q7_q_100",
+      "jobs": [
+        100,
+        200,
+        300
+      ],
+      "policy": "RR",
+      "quantum": 100,
+      "response": [
+        0,
+        100,
+        200
+      ],
+      "turnaround": [
+        100,
+        400,
+        600
+      ],
+      "wait": [
+        0,
+        200,
+        300
+      ],
+      "average": [
+        100.0,
+        366.6666666666667,
+        166.66666666666666
+      ],
+      "simulator_average": [
+        100.0,
+        366.67,
+        166.67
+      ],
+      "command": "python3 ./ext/ostep-homework/cpu-sched/scheduler.py -l 100,200,300 -p RR -s 1234 -q 100 -c"
+    },
+    {
+      "id": "q7_q_200",
+      "jobs": [
+        100,
+        200,
+        300
+      ],
+      "policy": "RR",
+      "quantum": 200,
+      "response": [
+        0,
+        100,
+        300
+      ],
+      "turnaround": [
+        100,
+        300,
+        600
+      ],
+      "wait": [
+        0,
+        100,
+        300
+      ],
+      "average": [
+        133.33333333333334,
+        333.3333333333333,
+        133.33333333333334
+      ],
+      "simulator_average": [
+        133.33,
+        333.33,
+        133.33
+      ],
+      "command": "python3 ./ext/ostep-homework/cpu-sched/scheduler.py -l 100,200,300 -p RR -s 1234 -q 200 -c"
+    },
+    {
+      "id": "q7_q_300",
+      "jobs": [
+        100,
+        200,
+        300
+      ],
+      "policy": "RR",
+      "quantum": 300,
+      "response": [
+        0,
+        100,
+        300
+      ],
+      "turnaround": [
+        100,
+        300,
+        600
+      ],
+      "wait": [
+        0,
+        100,
+        300
+      ],
+      "average": [
+        133.33333333333334,
+        333.3333333333333,
+        133.33333333333334
+      ],
+      "simulator_average": [
+        133.33,
+        333.33,
+        133.33
+      ],
+      "command": "python3 ./ext/ostep-homework/cpu-sched/scheduler.py -l 100,200,300 -p RR -s 1234 -q 300 -c"
+    },
+    {
+      "id": "q7_n_2",
+      "jobs": [
+        100,
+        100
+      ],
+      "policy": "RR",
+      "quantum": 5,
+      "response": [
+        0,
+        5
+      ],
+      "turnaround": [
+        195,
+        200
+      ],
+      "wait": [
+        95,
+        100
+      ],
+      "average": [
+        2.5,
+        197.5,
+        97.5
+      ],
+      "simulator_average": [
+        2.5,
+        197.5,
+        97.5
+      ],
+      "command": "python3 ./ext/ostep-homework/cpu-sched/scheduler.py -l 100,100 -p RR -s 1234 -q 5 -c"
+    },
+    {
+      "id": "q7_n_3",
+      "jobs": [
+        100,
+        100,
+        100
+      ],
+      "policy": "RR",
+      "quantum": 5,
+      "response": [
+        0,
+        5,
+        10
+      ],
+      "turnaround": [
+        290,
+        295,
+        300
+      ],
+      "wait": [
+        190,
+        195,
+        200
+      ],
+      "average": [
+        5.0,
+        295.0,
+        195.0
+      ],
+      "simulator_average": [
+        5.0,
+        295.0,
+        195.0
+      ],
+      "command": "python3 ./ext/ostep-homework/cpu-sched/scheduler.py -l 100,100,100 -p RR -s 1234 -q 5 -c"
+    },
+    {
+      "id": "q7_n_5",
+      "jobs": [
+        100,
+        100,
+        100,
+        100,
+        100
+      ],
+      "policy": "RR",
+      "quantum": 5,
+      "response": [
+        0,
+        5,
+        10,
+        15,
+        20
+      ],
+      "turnaround": [
+        480,
+        485,
+        490,
+        495,
+        500
+      ],
+      "wait": [
+        380,
+        385,
+        390,
+        395,
+        400
+      ],
+      "average": [
+        10.0,
+        490.0,
+        390.0
+      ],
+      "simulator_average": [
+        10.0,
+        490.0,
+        390.0
+      ],
+      "command": "python3 ./ext/ostep-homework/cpu-sched/scheduler.py -l 100,100,100,100,100 -p RR -s 1234 -q 5 -c"
+    },
+    {
+      "id": "q7_short_jobs",
+      "jobs": [
+        1,
+        1,
+        100
+      ],
+      "policy": "RR",
+      "quantum": 10,
+      "response": [
+        0,
+        1,
+        2
+      ],
+      "turnaround": [
+        1,
+        2,
+        102
+      ],
+      "wait": [
+        0,
+        1,
+        2
+      ],
+      "average": [
+        1.0,
+        35.0,
+        1.0
+      ],
+      "simulator_average": [
+        1.0,
+        35.0,
+        1.0
+      ],
+      "command": "python3 ./ext/ostep-homework/cpu-sched/scheduler.py -l 1,1,100 -p RR -s 1234 -q 10 -c"
+    }
+  ]
+}

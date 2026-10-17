@@ -1,0 +1,80 @@
+ARG policy RR
+ARG jlist 100,100,100
+
+Here is the job list, with the run time of each job: 
+  Job 0 ( length = 100.0 )
+  Job 1 ( length = 100.0 )
+  Job 2 ( length = 100.0 )
+
+
+** Solutions **
+
+Execution trace:
+  [ time   0 ] Run job   0 for 5.00 secs
+  [ time   5 ] Run job   1 for 5.00 secs
+  [ time  10 ] Run job   2 for 5.00 secs
+  [ time  15 ] Run job   0 for 5.00 secs
+  [ time  20 ] Run job   1 for 5.00 secs
+  [ time  25 ] Run job   2 for 5.00 secs
+  [ time  30 ] Run job   0 for 5.00 secs
+  [ time  35 ] Run job   1 for 5.00 secs
+  [ time  40 ] Run job   2 for 5.00 secs
+  [ time  45 ] Run job   0 for 5.00 secs
+  [ time  50 ] Run job   1 for 5.00 secs
+  [ time  55 ] Run job   2 for 5.00 secs
+  [ time  60 ] Run job   0 for 5.00 secs
+  [ time  65 ] Run job   1 for 5.00 secs
+  [ time  70 ] Run job   2 for 5.00 secs
+  [ time  75 ] Run job   0 for 5.00 secs
+  [ time  80 ] Run job   1 for 5.00 secs
+  [ time  85 ] Run job   2 for 5.00 secs
+  [ time  90 ] Run job   0 for 5.00 secs
+  [ time  95 ] Run job   1 for 5.00 secs
+  [ time 100 ] Run job   2 for 5.00 secs
+  [ time 105 ] Run job   0 for 5.00 secs
+  [ time 110 ] Run job   1 for 5.00 secs
+  [ time 115 ] Run job   2 for 5.00 secs
+  [ time 120 ] Run job   0 for 5.00 secs
+  [ time 125 ] Run job   1 for 5.00 secs
+  [ time 130 ] Run job   2 for 5.00 secs
+  [ time 135 ] Run job   0 for 5.00 secs
+  [ time 140 ] Run job   1 for 5.00 secs
+  [ time 145 ] Run job   2 for 5.00 secs
+  [ time 150 ] Run job   0 for 5.00 secs
+  [ time 155 ] Run job   1 for 5.00 secs
+  [ time 160 ] Run job   2 for 5.00 secs
+  [ time 165 ] Run job   0 for 5.00 secs
+  [ time 170 ] Run job   1 for 5.00 secs
+  [ time 175 ] Run job   2 for 5.00 secs
+  [ time 180 ] Run job   0 for 5.00 secs
+  [ time 185 ] Run job   1 for 5.00 secs
+  [ time 190 ] Run job   2 for 5.00 secs
+  [ time 195 ] Run job   0 for 5.00 secs
+  [ time 200 ] Run job   1 for 5.00 secs
+  [ time 205 ] Run job   2 for 5.00 secs
+  [ time 210 ] Run job   0 for 5.00 secs
+  [ time 215 ] Run job   1 for 5.00 secs
+  [ time 220 ] Run job   2 for 5.00 secs
+  [ time 225 ] Run job   0 for 5.00 secs
+  [ time 230 ] Run job   1 for 5.00 secs
+  [ time 235 ] Run job   2 for 5.00 secs
+  [ time 240 ] Run job   0 for 5.00 secs
+  [ time 245 ] Run job   1 for 5.00 secs
+  [ time 250 ] Run job   2 for 5.00 secs
+  [ time 255 ] Run job   0 for 5.00 secs
+  [ time 260 ] Run job   1 for 5.00 secs
+  [ time 265 ] Run job   2 for 5.00 secs
+  [ time 270 ] Run job   0 for 5.00 secs
+  [ time 275 ] Run job   1 for 5.00 secs
+  [ time 280 ] Run job   2 for 5.00 secs
+  [ time 285 ] Run job   0 for 5.00 secs ( DONE at 290.00 )
+  [ time 290 ] Run job   1 for 5.00 secs ( DONE at 295.00 )
+  [ time 295 ] Run job   2 for 5.00 secs ( DONE at 300.00 )
+
+Final statistics:
+  Job   0 -- Response: 0.00  Turnaround 290.00  Wait 190.00
+  Job   1 -- Response: 5.00  Turnaround 295.00  Wait 195.00
+  Job   2 -- Response: 10.00  Turnaround 300.00  Wait 200.00
+
+  Average -- Response: 5.00  Turnaround 295.00  Wait 195.00
+
